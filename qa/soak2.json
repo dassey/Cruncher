@@ -1,0 +1,1013 @@
+{
+  "runs": 30,
+  "totalRounds": 8,
+  "bossSeen": false,
+  "deaths": 30,
+  "correct": 178,
+  "wrong": 310,
+  "errors": [],
+  "external": [],
+  "badTransitions": [],
+  "perRun": [
+    {
+      "seed": 1000,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 88.6,
+      "jsAvgMs": 0.3,
+      "jsWorstMs": 15.3,
+      "worstMs": 606.2,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 43,
+      "tex": 23,
+      "heapMB": 26.6,
+      "seconds": 80,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 33,
+          "heapMB": 25.2,
+          "geos": 32,
+          "tex": 14,
+          "calls": 26
+        },
+        {
+          "t": 64,
+          "heapMB": 26.5,
+          "geos": 43,
+          "tex": 23,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1001,
+      "hand": true,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 90.8,
+      "jsAvgMs": 0.36,
+      "jsWorstMs": 10.9,
+      "worstMs": 402.1,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 26,
+      "seconds": 38,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 35.9,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        }
+      ]
+    },
+    {
+      "seed": 1002,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 93.1,
+      "jsAvgMs": 0.39,
+      "jsWorstMs": 12,
+      "worstMs": 450,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 40,
+      "tex": 20,
+      "heapMB": 25.8,
+      "seconds": 35,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 32.4,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1003,
+      "hand": true,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 93.3,
+      "jsAvgMs": 0.39,
+      "jsWorstMs": 8.4,
+      "worstMs": 505.9,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 40,
+      "tex": 20,
+      "heapMB": 25.7,
+      "seconds": 40,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 35.9,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        },
+        {
+          "t": 34,
+          "heapMB": 25.2,
+          "geos": 40,
+          "tex": 20,
+          "calls": 32
+        }
+      ]
+    },
+    {
+      "seed": 1004,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 92.1,
+      "jsAvgMs": 0.42,
+      "jsWorstMs": 16.2,
+      "worstMs": 436.4,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 25.8,
+      "seconds": 38,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 32.7,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1005,
+      "hand": true,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 93.5,
+      "jsAvgMs": 0.36,
+      "jsWorstMs": 7.3,
+      "worstMs": 465.9,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 26.1,
+      "seconds": 36,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        }
+      ]
+    },
+    {
+      "seed": 1006,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 90.1,
+      "jsAvgMs": 0.36,
+      "jsWorstMs": 7.8,
+      "worstMs": 402.6,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 26.2,
+      "seconds": 43,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 32.9,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        },
+        {
+          "t": 34,
+          "heapMB": 25.6,
+          "geos": 38,
+          "tex": 18,
+          "calls": 28
+        }
+      ]
+    },
+    {
+      "seed": 1007,
+      "hand": true,
+      "rounds": 1,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 90.3,
+      "jsAvgMs": 0.34,
+      "jsWorstMs": 7.4,
+      "worstMs": 392.2,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 45,
+      "tex": 20,
+      "heapMB": 26.7,
+      "seconds": 51,
+      "damageBy": {
+        "wrong": 11
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36.1,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        },
+        {
+          "t": 33,
+          "heapMB": 25.6,
+          "geos": 39,
+          "tex": 19,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1008,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 87.2,
+      "jsAvgMs": 0.35,
+      "jsWorstMs": 6.4,
+      "worstMs": 360.3,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 25.5,
+      "seconds": 37,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 32.9,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1009,
+      "hand": true,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 87.5,
+      "jsAvgMs": 0.35,
+      "jsWorstMs": 13,
+      "worstMs": 349.8,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 32.2,
+      "seconds": 32,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36.2,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        }
+      ]
+    },
+    {
+      "seed": 1010,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 85.5,
+      "jsAvgMs": 0.34,
+      "jsWorstMs": 6.4,
+      "worstMs": 454.7,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 40,
+      "tex": 20,
+      "heapMB": 26,
+      "seconds": 44,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 33,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        },
+        {
+          "t": 35,
+          "heapMB": 25,
+          "geos": 39,
+          "tex": 19,
+          "calls": 30
+        }
+      ]
+    },
+    {
+      "seed": 1011,
+      "hand": true,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 87.7,
+      "jsAvgMs": 0.36,
+      "jsWorstMs": 7.9,
+      "worstMs": 362.2,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 40,
+      "tex": 20,
+      "heapMB": 26,
+      "seconds": 36,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36.1,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        }
+      ]
+    },
+    {
+      "seed": 1012,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 86.9,
+      "jsAvgMs": 0.32,
+      "jsWorstMs": 7.6,
+      "worstMs": 486.6,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 25.5,
+      "seconds": 40,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 33,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        },
+        {
+          "t": 35,
+          "heapMB": 25.9,
+          "geos": 39,
+          "tex": 19,
+          "calls": 32
+        }
+      ]
+    },
+    {
+      "seed": 1013,
+      "hand": true,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 88.6,
+      "jsAvgMs": 0.34,
+      "jsWorstMs": 8.2,
+      "worstMs": 350.4,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 26,
+      "seconds": 39,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 35.7,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        },
+        {
+          "t": 34,
+          "heapMB": 25.4,
+          "geos": 39,
+          "tex": 19,
+          "calls": 32
+        }
+      ]
+    },
+    {
+      "seed": 1014,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 89.2,
+      "jsAvgMs": 0.34,
+      "jsWorstMs": 6.8,
+      "worstMs": 352.8,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 25.9,
+      "seconds": 38,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 33,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        },
+        {
+          "t": 33,
+          "heapMB": 25.3,
+          "geos": 39,
+          "tex": 19,
+          "calls": 32
+        }
+      ]
+    },
+    {
+      "seed": 1015,
+      "hand": true,
+      "rounds": 1,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 92,
+      "jsAvgMs": 0.34,
+      "jsWorstMs": 7.6,
+      "worstMs": 345.4,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 45,
+      "tex": 20,
+      "heapMB": 26.6,
+      "seconds": 59,
+      "damageBy": {
+        "wrong": 11
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36.2,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        },
+        {
+          "t": 34,
+          "heapMB": 25.8,
+          "geos": 38,
+          "tex": 18,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1016,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 88.7,
+      "jsAvgMs": 0.36,
+      "jsWorstMs": 7.5,
+      "worstMs": 479.5,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 40,
+      "tex": 20,
+      "heapMB": 25.4,
+      "seconds": 41,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 33,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        },
+        {
+          "t": 33,
+          "heapMB": 25.6,
+          "geos": 39,
+          "tex": 19,
+          "calls": 30
+        }
+      ]
+    },
+    {
+      "seed": 1017,
+      "hand": true,
+      "rounds": 1,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 90.9,
+      "jsAvgMs": 0.37,
+      "jsWorstMs": 7.1,
+      "worstMs": 482.3,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 45,
+      "tex": 20,
+      "heapMB": 26.5,
+      "seconds": 59,
+      "damageBy": {
+        "wrong": 11
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36.2,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        },
+        {
+          "t": 34,
+          "heapMB": 25.4,
+          "geos": 39,
+          "tex": 19,
+          "calls": 38
+        }
+      ]
+    },
+    {
+      "seed": 1018,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 89.8,
+      "jsAvgMs": 0.38,
+      "jsWorstMs": 9.7,
+      "worstMs": 371.5,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 40,
+      "tex": 20,
+      "heapMB": 25.5,
+      "seconds": 35,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 32.9,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1019,
+      "hand": true,
+      "rounds": 1,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 90.3,
+      "jsAvgMs": 0.34,
+      "jsWorstMs": 8,
+      "worstMs": 464.9,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 45,
+      "tex": 20,
+      "heapMB": 27.3,
+      "seconds": 60,
+      "damageBy": {
+        "wrong": 13
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36.2,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        },
+        {
+          "t": 33,
+          "heapMB": 26.5,
+          "geos": 39,
+          "tex": 19,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1020,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 89.1,
+      "jsAvgMs": 0.36,
+      "jsWorstMs": 8.5,
+      "worstMs": 387.1,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 25.8,
+      "seconds": 37,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 32.8,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1021,
+      "hand": true,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 90.1,
+      "jsAvgMs": 0.35,
+      "jsWorstMs": 6.7,
+      "worstMs": 374.3,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 26.6,
+      "seconds": 34,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        }
+      ]
+    },
+    {
+      "seed": 1022,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 91.8,
+      "jsAvgMs": 0.39,
+      "jsWorstMs": 7.6,
+      "worstMs": 373.1,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 25.6,
+      "seconds": 31,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 32.8,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1023,
+      "hand": true,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 92.2,
+      "jsAvgMs": 0.37,
+      "jsWorstMs": 14.1,
+      "worstMs": 379.6,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 25.5,
+      "seconds": 41,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36.1,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        },
+        {
+          "t": 34,
+          "heapMB": 26.5,
+          "geos": 38,
+          "tex": 18,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1024,
+      "hand": false,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 97.1,
+      "jsAvgMs": 0.42,
+      "jsWorstMs": 9.6,
+      "worstMs": 434.4,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 25.4,
+      "seconds": 36,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 32.6,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1025,
+      "hand": true,
+      "rounds": 0,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 92.1,
+      "jsAvgMs": 0.39,
+      "jsWorstMs": 13.4,
+      "worstMs": 413,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 39,
+      "tex": 19,
+      "heapMB": 25.2,
+      "seconds": 34,
+      "damageBy": {
+        "wrong": 10
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36.4,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        }
+      ]
+    },
+    {
+      "seed": 1026,
+      "hand": false,
+      "rounds": 1,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 92.6,
+      "jsAvgMs": 0.37,
+      "jsWorstMs": 10.3,
+      "worstMs": 417.1,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 45,
+      "tex": 20,
+      "heapMB": 26.4,
+      "seconds": 68,
+      "damageBy": {
+        "wrong": 11
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 32.8,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        },
+        {
+          "t": 33,
+          "heapMB": 25.1,
+          "geos": 40,
+          "tex": 20,
+          "calls": 38
+        }
+      ]
+    },
+    {
+      "seed": 1027,
+      "hand": true,
+      "rounds": 1,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 91.5,
+      "jsAvgMs": 0.36,
+      "jsWorstMs": 7.2,
+      "worstMs": 443.8,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 45,
+      "tex": 20,
+      "heapMB": 26.9,
+      "seconds": 54,
+      "damageBy": {
+        "wrong": 11
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36.1,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        },
+        {
+          "t": 34,
+          "heapMB": 25.4,
+          "geos": 39,
+          "tex": 19,
+          "calls": 28
+        }
+      ]
+    },
+    {
+      "seed": 1028,
+      "hand": false,
+      "rounds": 1,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 90.1,
+      "jsAvgMs": 0.37,
+      "jsWorstMs": 8.1,
+      "worstMs": 394.4,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 45,
+      "tex": 20,
+      "heapMB": 26.3,
+      "seconds": 57,
+      "damageBy": {
+        "wrong": 11
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 33.1,
+          "geos": 27,
+          "tex": 9,
+          "calls": 26
+        },
+        {
+          "t": 34,
+          "heapMB": 25.7,
+          "geos": 38,
+          "tex": 18,
+          "calls": 26
+        }
+      ]
+    },
+    {
+      "seed": 1029,
+      "hand": true,
+      "rounds": 1,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 94.1,
+      "jsAvgMs": 0.39,
+      "jsWorstMs": 10.8,
+      "worstMs": 500.1,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 45,
+      "tex": 20,
+      "heapMB": 27.3,
+      "seconds": 61,
+      "damageBy": {
+        "wrong": 11
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36.1,
+          "geos": 27,
+          "tex": 9,
+          "calls": 32
+        },
+        {
+          "t": 34,
+          "heapMB": 25.4,
+          "geos": 39,
+          "tex": 19,
+          "calls": 28
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "qa/screens/soak/01-menu-desktop.png",
+    "qa/screens/soak/02-menu-xr.png",
+    "qa/screens/soak/09-stats.png",
+    "qa/screens/soak/10-shop.png",
+    "qa/screens/soak/11-settings.png",
+    "qa/screens/soak/03-gameplay.png",
+    "qa/screens/soak/05-miss.png",
+    "qa/screens/soak/08-gameover-run0.png",
+    "qa/screens/soak/08-gameover-run1.png"
+  ]
+}

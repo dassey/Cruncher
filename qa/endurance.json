@@ -1,0 +1,184 @@
+{
+  "runs": 1,
+  "totalRounds": 14,
+  "bossSeen": true,
+  "deaths": 0,
+  "correct": 155,
+  "wrong": 25,
+  "errors": [],
+  "external": [],
+  "badTransitions": [],
+  "perRun": [
+    {
+      "seed": 1000,
+      "hand": false,
+      "rounds": 14,
+      "died": false,
+      "avgMs": 99.5,
+      "jsAvgMs": 0.29,
+      "jsWorstMs": 13.4,
+      "worstMs": 599.9,
+      "calls": 64,
+      "tris": 9404,
+      "geos": 62,
+      "tex": 32,
+      "heapMB": 27.2,
+      "seconds": 634,
+      "memory": [
+        {
+          "t": 34,
+          "heapMB": 25.1,
+          "geos": 31,
+          "tex": 14,
+          "calls": 26
+        },
+        {
+          "t": 64,
+          "heapMB": 26,
+          "geos": 43,
+          "tex": 25,
+          "calls": 28
+        },
+        {
+          "t": 94,
+          "heapMB": 26.8,
+          "geos": 49,
+          "tex": 26,
+          "calls": 26
+        },
+        {
+          "t": 125,
+          "heapMB": 26.2,
+          "geos": 50,
+          "tex": 26,
+          "calls": 48
+        },
+        {
+          "t": 156,
+          "heapMB": 26.4,
+          "geos": 60,
+          "tex": 32,
+          "calls": 64
+        },
+        {
+          "t": 186,
+          "heapMB": 27.6,
+          "geos": 60,
+          "tex": 32,
+          "calls": 46
+        },
+        {
+          "t": 217,
+          "heapMB": 25.7,
+          "geos": 60,
+          "tex": 32,
+          "calls": 70
+        },
+        {
+          "t": 249,
+          "heapMB": 26,
+          "geos": 60,
+          "tex": 32,
+          "calls": 64
+        },
+        {
+          "t": 281,
+          "heapMB": 27.1,
+          "geos": 62,
+          "tex": 32,
+          "calls": 38
+        },
+        {
+          "t": 313,
+          "heapMB": 26.5,
+          "geos": 62,
+          "tex": 32,
+          "calls": 26
+        },
+        {
+          "t": 343,
+          "heapMB": 26.6,
+          "geos": 62,
+          "tex": 32,
+          "calls": 60
+        },
+        {
+          "t": 374,
+          "heapMB": 26.5,
+          "geos": 62,
+          "tex": 32,
+          "calls": 64
+        },
+        {
+          "t": 404,
+          "heapMB": 27.3,
+          "geos": 62,
+          "tex": 32,
+          "calls": 82
+        },
+        {
+          "t": 437,
+          "heapMB": 26.9,
+          "geos": 62,
+          "tex": 32,
+          "calls": 40
+        },
+        {
+          "t": 467,
+          "heapMB": 27,
+          "geos": 62,
+          "tex": 32,
+          "calls": 98
+        },
+        {
+          "t": 497,
+          "heapMB": 26,
+          "geos": 62,
+          "tex": 32,
+          "calls": 82
+        },
+        {
+          "t": 529,
+          "heapMB": 26.7,
+          "geos": 62,
+          "tex": 32,
+          "calls": 68
+        },
+        {
+          "t": 561,
+          "heapMB": 26.8,
+          "geos": 62,
+          "tex": 32,
+          "calls": 106
+        },
+        {
+          "t": 592,
+          "heapMB": 27.2,
+          "geos": 62,
+          "tex": 32,
+          "calls": 66
+        },
+        {
+          "t": 623,
+          "heapMB": 27.4,
+          "geos": 62,
+          "tex": 32,
+          "calls": 48
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "qa/screens/endurance/01-menu-desktop.png",
+    "qa/screens/endurance/02-menu-xr.png",
+    "qa/screens/endurance/09-stats.png",
+    "qa/screens/endurance/10-shop.png",
+    "qa/screens/endurance/11-settings.png",
+    "qa/screens/endurance/03-gameplay.png",
+    "qa/screens/endurance/04-hit.png",
+    "qa/screens/endurance/07-perk.png",
+    "qa/screens/endurance/12-pause.png",
+    "qa/screens/endurance/05-miss.png",
+    "qa/screens/endurance/06-boss.png"
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "id": "test-bot",
+    "name": "TEST BOT",
+    "file": "test-bot.glb",
+    "nodes": { "jaw": "jaw", "spinner": "spinner", "screen": "screen", "eyes": ["eyeL", "eyeR"] }
+  }
+]

@@ -1,0 +1,204 @@
+{
+  "runs": 3,
+  "totalRounds": 14,
+  "bossSeen": true,
+  "deaths": 2,
+  "correct": 129,
+  "wrong": 34,
+  "errors": [],
+  "external": [],
+  "badTransitions": [],
+  "perRun": [
+    {
+      "seed": 1000,
+      "hand": false,
+      "blast": false,
+      "rounds": 10,
+      "died": false,
+      "avgMs": 91.7,
+      "jsAvgMs": 0.33,
+      "jsWorstMs": 25.6,
+      "worstMs": 827.4,
+      "calls": 46,
+      "tris": 5236,
+      "geos": 65,
+      "tex": 31,
+      "heapMB": 27.2,
+      "seconds": 376,
+      "memory": [
+        {
+          "t": 35,
+          "heapMB": 26,
+          "geos": 35,
+          "tex": 15,
+          "calls": 34
+        },
+        {
+          "t": 73,
+          "heapMB": 27.3,
+          "geos": 51,
+          "tex": 25,
+          "calls": 50
+        },
+        {
+          "t": 104,
+          "heapMB": 27.3,
+          "geos": 52,
+          "tex": 25,
+          "calls": 58
+        },
+        {
+          "t": 135,
+          "heapMB": 27.1,
+          "geos": 55,
+          "tex": 26,
+          "calls": 76
+        },
+        {
+          "t": 166,
+          "heapMB": 27.4,
+          "geos": 63,
+          "tex": 31,
+          "calls": 56
+        },
+        {
+          "t": 197,
+          "heapMB": 27.6,
+          "geos": 63,
+          "tex": 31,
+          "calls": 70
+        },
+        {
+          "t": 229,
+          "heapMB": 26.6,
+          "geos": 63,
+          "tex": 31,
+          "calls": 68
+        },
+        {
+          "t": 260,
+          "heapMB": 26.5,
+          "geos": 65,
+          "tex": 31,
+          "calls": 46
+        },
+        {
+          "t": 291,
+          "heapMB": 27.4,
+          "geos": 65,
+          "tex": 31,
+          "calls": 36
+        },
+        {
+          "t": 322,
+          "heapMB": 27,
+          "geos": 65,
+          "tex": 31,
+          "calls": 76
+        },
+        {
+          "t": 352,
+          "heapMB": 26.8,
+          "geos": 65,
+          "tex": 31,
+          "calls": 74
+        }
+      ]
+    },
+    {
+      "seed": 1001,
+      "hand": true,
+      "blast": false,
+      "rounds": 1,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 92.3,
+      "jsAvgMs": 0.44,
+      "jsWorstMs": 12.5,
+      "worstMs": 366.7,
+      "calls": 34,
+      "tris": 5716,
+      "geos": 47,
+      "tex": 20,
+      "heapMB": 28.3,
+      "seconds": 64,
+      "damageBy": {
+        "wrong": 11
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 37,
+          "geos": 29,
+          "tex": 9,
+          "calls": 40
+        },
+        {
+          "t": 33,
+          "heapMB": 26.8,
+          "geos": 41,
+          "tex": 19,
+          "calls": 34
+        }
+      ]
+    },
+    {
+      "seed": 1002,
+      "hand": false,
+      "blast": true,
+      "rounds": 3,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 89.8,
+      "jsAvgMs": 0.41,
+      "jsWorstMs": 7.1,
+      "worstMs": 366.8,
+      "calls": 34,
+      "tris": 5716,
+      "geos": 49,
+      "tex": 21,
+      "heapMB": 27.3,
+      "seconds": 79,
+      "damageBy": {
+        "wrong": 13
+      },
+      "memory": [
+        {
+          "t": 2,
+          "heapMB": 32.8,
+          "geos": 29,
+          "tex": 9,
+          "calls": 34
+        },
+        {
+          "t": 33,
+          "heapMB": 26,
+          "geos": 47,
+          "tex": 20,
+          "calls": 60
+        },
+        {
+          "t": 63,
+          "heapMB": 27,
+          "geos": 47,
+          "tex": 20,
+          "calls": 36
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "qa/screens/01-menu-desktop.png",
+    "qa/screens/02-menu-xr.png",
+    "qa/screens/09-stats.png",
+    "qa/screens/10-shop.png",
+    "qa/screens/11-settings.png",
+    "qa/screens/03-gameplay.png",
+    "qa/screens/04-hit.png",
+    "qa/screens/07-perk.png",
+    "qa/screens/12-pause.png",
+    "qa/screens/05-miss.png",
+    "qa/screens/06-boss.png",
+    "qa/screens/08-gameover-run1.png"
+  ]
+}

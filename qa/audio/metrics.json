@@ -1,0 +1,17 @@
+{
+  "menu": {
+    "peak": 0.153,
+    "rmsDb": -35.2,
+    "bassShare": 0.68
+  },
+  "game": {
+    "peak": 0.339,
+    "rmsDb": -26,
+    "bassShare": 0.66
+  },
+  "boss": {
+    "peak": 0.313,
+    "rmsDb": -25.8,
+    "bassShare": 0.69
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "runs": 2,
+  "totalRounds": 7,
+  "bossSeen": true,
+  "deaths": 2,
+  "correct": 69,
+  "wrong": 24,
+  "errors": [],
+  "external": [],
+  "badTransitions": [],
+  "perRun": [
+    {
+      "seed": 1000,
+      "hand": false,
+      "rounds": 6,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 88.8,
+      "jsAvgMs": 0.27,
+      "jsWorstMs": 12.3,
+      "worstMs": 625.8,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 63,
+      "tex": 32,
+      "heapMB": 26.3,
+      "seconds": 259,
+      "damageBy": {
+        "wrong": 15
+      },
+      "memory": [
+        {
+          "t": 33,
+          "heapMB": 25.6,
+          "geos": 31,
+          "tex": 14,
+          "calls": 26
+        },
+        {
+          "t": 70,
+          "heapMB": 26.6,
+          "geos": 50,
+          "tex": 26,
+          "calls": 42
+        },
+        {
+          "t": 102,
+          "heapMB": 26.6,
+          "geos": 50,
+          "tex": 26,
+          "calls": 52
+        },
+        {
+          "t": 133,
+          "heapMB": 26.6,
+          "geos": 53,
+          "tex": 27,
+          "calls": 86
+        },
+        {
+          "t": 164,
+          "heapMB": 27.1,
+          "geos": 61,
+          "tex": 32,
+          "calls": 50
+        },
+        {
+          "t": 195,
+          "heapMB": 26.1,
+          "geos": 61,
+          "tex": 32,
+          "calls": 64
+        },
+        {
+          "t": 225,
+          "heapMB": 26.6,
+          "geos": 61,
+          "tex": 32,
+          "calls": 60
+        }
+      ]
+    },
+    {
+      "seed": 1001,
+      "hand": true,
+      "rounds": 1,
+      "died": true,
+      "restartOk": true,
+      "avgMs": 88.1,
+      "jsAvgMs": 0.34,
+      "jsWorstMs": 8.4,
+      "worstMs": 405.6,
+      "calls": 26,
+      "tris": 5620,
+      "geos": 46,
+      "tex": 22,
+      "heapMB": 26.7,
+      "seconds": 62,
+      "damageBy": {
+        "wrong": 11
+      },
+      "memory": [
+        {
+          "t": 3,
+          "heapMB": 36.2,
+          "geos": 26,
+          "tex": 9,
+          "calls": 36
+        },
+        {
+          "t": 33,
+          "heapMB": 25.2,
+          "geos": 41,
+          "tex": 22,
+          "calls": 38
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "qa/screens/01-menu-desktop.png",
+    "qa/screens/02-menu-xr.png",
+    "qa/screens/09-stats.png",
+    "qa/screens/10-shop.png",
+    "qa/screens/11-settings.png",
+    "qa/screens/03-gameplay.png",
+    "qa/screens/04-hit.png",
+    "qa/screens/07-perk.png",
+    "qa/screens/12-pause.png",
+    "qa/screens/05-miss.png",
+    "qa/screens/06-boss.png",
+    "qa/screens/08-gameover-run0.png",
+    "qa/screens/08-gameover-run1.png"
+  ]
+}

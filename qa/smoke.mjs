@@ -1,0 +1,23 @@
+// Quick smoke: load, title screenshot, enter XR, screenshot. Usage: node qa/smoke.mjs [url]
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('playwright');
+const url = process.argv[2] ?? 'https://localhost:4173/?bot&fresh&seed=1';
+const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', args: ['--headless=new', '--no-sandbox', '--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist', '--autoplay-policy=no-user-gesture-required'] });
+const page = await browser.newPage({ ignoreHTTPSErrors: true, viewport: { width: 1280, height: 800 } });
+const logs = [];
+page.on('console', (m) => logs.push(`[${m.type()}] ${m.text()}`));
+page.on('pageerror', (e) => logs.push(`[pageerror] ${e.message}`));
+const external = [];
+page.on('request', (r) => { const u = new URL(r.url()); if (!['localhost', '127.0.0.1'].includes(u.hostname) && !u.protocol.startsWith('data') && !u.protocol.startsWith('blob')) external.push(r.url()); });
+await page.goto(url);
+await page.waitForFunction(() => window.__CRUNCHER__, null, { timeout: 30000 });
+await page.waitForTimeout(1500);
+await page.screenshot({ path: 'qa/screens/smoke-title-desktop.png' });
+const inXR = await page.evaluate(() => window.__CRUNCHER__.enterXR());
+await page.waitForTimeout(1000);
+await page.screenshot({ path: 'qa/screens/smoke-title-xr.png' });
+console.log('inXR', inXR, JSON.stringify(await page.evaluate(() => window.__CRUNCHER__.state())));
+console.log(logs.slice(0, 40).join('\n'));
+console.log('external requests:', external);
+await browser.close();
