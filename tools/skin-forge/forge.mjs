@@ -80,7 +80,7 @@ export function extractCode(reply, preferred) {
   const text = reply.replace(/<think>[\s\S]*?<\/think>/g, '');
   const fences = [...text.matchAll(/```([a-zA-Z]*)[^\n]*\n([\s\S]*?)(?:```|$)/g)].map((m) => ({ lang: m[1].toLowerCase(), body: m[2] }));
   const html = fences.find((f) => f.lang === 'html' || /<html[\s>]|<!doctype html/i.test(f.body))?.body
-    ?? /<!doctype html[\s\S]*<\/html>/i.exec(text)?.[0] ?? /<html[\s\S]*<\/html>/i.exec(text)?.[0];
+    ?? /<!doctype html[\s\S]*?(<\/html>|$)/i.exec(text)?.[0] ?? /<html[\s>][\s\S]*?(<\/html>|$)/i.exec(text)?.[0];
   const js = fences.filter((f) => ['js', 'javascript', 'ts', ''].includes(f.lang) && /return\b/.test(f.body) && !/<script/i.test(f.body))
     .sort((x, y) => y.body.length - x.body.length)[0]?.body;
   if (preferred === 'function' && js) return { style: 'function', code: js };
@@ -130,7 +130,7 @@ async function chat(messages) {
       const tps = stats.eval_count / (stats.eval_duration / 1e9);
       console.log(`  model: ${stats.eval_count} tokens in ${(stats.total_duration / 1e9).toFixed(0)}s (${tps.toFixed(1)} tok/s, stop: ${stats.done_reason})`);
     }
-    return { content, thinking };
+    return { content, thinking, cutOff: stats?.done_reason === 'length' };
   } catch (err) {
     if (err.name === 'AbortError') throw new Error(`model reply took longer than ${a['llm-timeout']} min`);
     if (err.cause?.code === 'ECONNREFUSED') throw new Error(`cannot reach Ollama at ${a.host} (is "ollama serve" running?)`);
@@ -179,8 +179,10 @@ async function main() {
       if (a['save-reply']) writeFileSync(path.join(OUT_DIR, `${id}.reply${n}.md`), `${reply.thinking ? `<think>\n${reply.thinking}\n</think>\n` : ''}${reply.content}`);
       messages.push({ role: 'assistant', content: reply.content });
       cand = extractCode(reply.content, a.style);
-      if (!cand) {
-        const err = 'I could not find any code in your reply.';
+      if (!cand || reply.cutOff) {
+        const err = reply.cutOff
+          ? 'Your reply was cut off by the output token limit before the code was finished. Write much shorter code: no comments, no CSS, no UI panels, no orbit controls.'
+          : 'I could not find any code in your reply.';
         console.log(`  ✗ ${err}`);
         messages.push({ role: 'user', content: retryPrompt(a.style, err) });
         continue;
