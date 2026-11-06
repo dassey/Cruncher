@@ -79,8 +79,15 @@ const temperature = a.temperature != null ? Number(a.temperature) : a.style === 
 export function extractCode(reply, preferred) {
   const text = reply.replace(/<think>[\s\S]*?<\/think>/g, '');
   const fences = [...text.matchAll(/```([a-zA-Z]*)[^\n]*\n([\s\S]*?)(?:```|$)/g)].map((m) => ({ lang: m[1].toLowerCase(), body: m[2] }));
-  const html = fences.find((f) => f.lang === 'html' || /<html[\s>]|<!doctype html/i.test(f.body))?.body
-    ?? /<!doctype html[\s\S]*?(<\/html>|$)/i.exec(text)?.[0] ?? /<html[\s>][\s\S]*?(<\/html>|$)/i.exec(text)?.[0];
+  // Replies can carry reasoning with code fragments before the real file: take the longest HTML block,
+  // else everything from the last <!doctype html> / <html> on.
+  const lastFrom = (re) => {
+    const all = [...text.matchAll(re)];
+    return all.length ? text.slice(all[all.length - 1].index).replace(/```[\s\S]*$/, '') : undefined;
+  };
+  const html = fences.filter((f) => f.lang === 'html' || /<html[\s>]|<!doctype html/i.test(f.body))
+    .sort((x, y) => y.body.length - x.body.length)[0]?.body
+    ?? lastFrom(/<!doctype html/gi) ?? lastFrom(/<html[\s>]/gi);
   const js = fences.filter((f) => ['js', 'javascript', 'ts', ''].includes(f.lang) && /return\b/.test(f.body) && !/<script/i.test(f.body))
     .sort((x, y) => y.body.length - x.body.length)[0]?.body;
   if (preferred === 'function' && js) return { style: 'function', code: js };

@@ -53,7 +53,7 @@ npm run build && npm run serve                # then open https://localhost:4173
 | `--model` | `hf.co/ccore/Qwen3.5-4B-GLB-3D-Coder:Q8_0` | any Ollama model name |
 | `--host` | `$OLLAMA_HOST` or `http://localhost:11434` | Ollama server |
 | `--style html\|function` | `html` | `html`: the model writes a full page with an Export GLB button (its training format). `function`: just a function body that returns the group (shorter; good for general coding models) |
-| `--no-think` | thinking on | turn model thinking off (faster, but the GLB coder is only validated with thinking on) |
+| `--no-think` | thinking on | ask the model not to think. The GLB coder ignores this and reasons inside its reply instead, so it is not faster; keep thinking on |
 | `--temperature` | 0.8 html / 0.6 function | sampling temperature |
 | `--num-ctx` / `--num-predict` | `65536` / `-1` | context size / max output tokens (-1 = unlimited; the model card warns 8K can cut the HTML off) |
 | `--llm-timeout` / `--timeout` | 30 min / 30 s | per model reply / per sandbox run |
@@ -113,9 +113,26 @@ There are **two** related community fine-tunes of `Qwen/Qwen3.5-4B` (both from t
   its own checks. The scene variant does not export; use `--style function` with it.
 - **Model card note:** files were updated on 2026-11-05; re-pull if you downloaded earlier.
 
+### What was tested without a GPU (2026-11-06)
+
+- Ollama 0.40.15 (Linux, official install script) on 4 CPU cores, `hf.co/ccore/Qwen3.5-4B-GLB-3D-Coder:Q4_K_M`
+  (2.7 GB download, about 4 GB loaded): about **6 tokens/s**.
+- Three runs for "a toaster with spider legs" (thinking off, output capped at 3.5K, 3.5K and 9K tokens). All
+  hit the cap before the HTML was finished (the 9K run took 25 min). The model ignored `--style function` and wrote
+  its trained HTML page; with thinking off it put its planning in the reply text. Its plan mostly followed the
+  contract (a root group; parts named like `Jaw`, `Spinner`, `EyeL`/`EyeR` with eyeball and pupil children; legs; an
+  Export GLB button that exports only the asset root), but it also planned animation clips and a ground plane, which
+  the forge drops.
+- So the model has **not** produced a finished skin here; that needs the GPU (no output cap, thinking on).
+- The rest of the pipeline was proven with hand-written input: `--code-file tools/skin-forge/examples/sample-bug.js`
+  (function style) and a CDN-importing HTML page with an Export GLB button that exports its whole scene (html style:
+  CDN imports were served locally, two tracking requests were blocked, the ground and lights were stripped). Infinite
+  loops time out, oversize meshes and syntax errors are rejected with a message for the model. The sample skin
+  (TOASTY) loads and renders in the game: `node qa/lineup.mjs "drifter:sample-bug" qa/screens/forge-test.png`.
+
 ### Verdict
 
-Worth using for **cheap, fast, stylised placeholder and toy creatures**: it writes primitive-based Three.js code,
+Worth trying for **free, local, stylised toy creatures**: it writes primitive-based Three.js code,
 which already matches CRUNCHER's look (procedural primitives, big googly eyes), the output has named parts we can
 animate, the poly count is tiny, and the licence is clean. It does not make sculpted or textured art: a 4B model
 only places boxes, spheres and cylinders, and expect retries. For hero art, use an image-to-3D model (below),
