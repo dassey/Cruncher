@@ -18,7 +18,8 @@
     "playtest": "node qa/playtest.mjs --runs 2 --rounds 10",
     "playtest:soak": "node qa/playtest.mjs --runs 30 --quick --shots qa/screens/soak",
     "sim": "vite-node qa/learning-sim.mjs",
-    "serve": "vite preview --port 4173 --strictPort"
+    "serve": "vite preview --port 4173 --strictPort",
+    "forge": "node tools/skin-forge/forge.mjs"
   },
   "dependencies": {
     "@iwsdk/core": "1.1.0-rc.2",

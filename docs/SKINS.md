@@ -31,5 +31,10 @@ Any skin can be worn by any behaviour. Systems scale every skin to the slot's si
    ```
 4. Load with `?skin=boss:my-llama` (or set it in `DEFAULT_ROSTER`).
 
+## Generate one from a text prompt
+`npm run forge -- --id my-bug --name "MY BUG" --prompt "a toaster with spider legs"` builds a skin with a local
+AI model (Ollama), checks it in a sandboxed headless browser, and does steps 1–3 for you. See `docs/SKIN_FORGE.md`.
+`public/skins/sample-bug.glb` (TOASTY) came from the hand-written sample `tools/skin-forge/examples/sample-bug.js`.
+
 `tools/make-test-skin.py` writes `public/skins/test-bot.glb`, a tiny template GLB with every
 node name above. Open it in Blender to see the expected structure.

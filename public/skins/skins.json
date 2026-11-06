@@ -4,5 +4,11 @@
     "name": "TEST BOT",
     "file": "test-bot.glb",
     "nodes": { "jaw": "jaw", "spinner": "spinner", "screen": "screen", "eyes": ["eyeL", "eyeR"] }
+  },
+  {
+    "id": "sample-bug",
+    "name": "TOASTY",
+    "file": "sample-bug.glb",
+    "nodes": { "jaw": "jaw", "spinner": "spinner", "legs": ["leg1", "leg2", "leg3", "leg4", "leg5", "leg6"], "eyes": ["eyeL", "eyeR"] }
   }
 ]
