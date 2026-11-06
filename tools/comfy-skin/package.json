@@ -1,0 +1,16 @@
+{
+  "name": "comfy-skin",
+  "private": true,
+  "type": "module",
+  "description": "ComfyUI image-to-3D workflow -> game-ready CRUNCHER skin (GLB)",
+  "scripts": {
+    "skin": "node comfy-skin.mjs"
+  },
+  "dependencies": {
+    "@gltf-transform/core": "^4.5.1",
+    "@gltf-transform/extensions": "^4.5.1",
+    "@gltf-transform/functions": "^4.5.1",
+    "meshoptimizer": "^1.3.0",
+    "sharp": "^0.35.4"
+  }
+}
